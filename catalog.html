@@ -14,18 +14,67 @@
           <img src="img/logo.png" width="138" height="70" alt="logo city of Sedona">
         </a>
         <ul class="menu">
-          <li><a href="#">информация</a></li>
-          <li><a href="#">фото и видео</a></li>
-          <li><a href="#">карта штата</a></li>
-          <li><a href="#">гостиницы</a></li>
+          <li class="active"><a href="#">информация</a></li>
+          <li class="active"><a href="#">фото и видео</a></li>
+          <li class="active"><a href="#">карта штата</a></li>
+          <li class="active"><a href="#">гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="filters">
-        <form class="filter"></form>
-        <!--здесь будет форма-->
-        <a class="button" href="#">показать</a>
+        <form class="filter" action="index.html" method="get">
+          <fieldset>
+            <legend>инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="swimmigpool" id="filter-swimmigpool" checked>
+                <label for="filter-swimmigpool"> бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking">парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                <label for="filter-wi-fi">wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="home-type">тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="filter-motel" checked>
+                <label for="filter-motel">мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartments" id="filter-apartments" checked>
+                <label for="filter-apartments">апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <h3 class="value">стоимость в сутки (р)</h3>
+          <div class="from">
+            <label for="from">от</label>
+            <input type="number" name="number-from" value="0">
+          </div>
+          <div class="to">
+            <label for="to">до</label>
+            <input type="number" name="number-to" value="3000">
+          </div>
+          <div class="range-selector">
+            <input type="range" name="range-from">
+            <input type="range" name="range-to">
+          </div>
+          <div class="button">
+            <button type="submit" name="button">показать</button>
+          </div>
+        </form>
       </section>
       <section class="results">
         <div class="sorting-filters">
@@ -114,10 +163,12 @@
       </div>
       <div class="footer-copyright">
         <span class="web-copyright">website by</span>
-        <a class="web-logo" href="#"><img src="http://placehold.it/html.academy.logo" alt="html.academy.logo"></a>
+        <a class="web-logo" href="#">
+          <img src="logo-htmlacademy.svg" alt="html.academy.logo">
+        </a>
       </div>
     </footer>
-  </div>
+    </div>
 </body>
 
 </html>
