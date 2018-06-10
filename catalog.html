@@ -9,23 +9,23 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <nav>
-        <a class="logo" href="#">
+      <nav class="navigation">
+        <a class="logo" href="index.html">
           <img src="img/logo.png" width="138" height="70" alt="logo city of Sedona">
         </a>
         <ul class="menu">
-          <li class="active"><a href="#">информация</a></li>
-          <li class="active"><a href="#">фото и видео</a></li>
-          <li class="active"><a href="#">карта штата</a></li>
-          <li class="active"><a href="#">гостиницы</a></li>
+          <li class="active">информация</li>
+          <li><a href="#">фото и видео</a></li>
+          <li><a href="#">карта штата</a></li>
+          <li><a href="#">гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="filters">
-        <form class="filter" action="index.html" method="get">
-          <fieldset>
-            <legend>инфраструктура:</legend>
+        <form class="filters-form" "https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filters-block">
+            <legend class="filters-title">инфраструктура:</legend>
             <ul>
               <li>
                 <input type="checkbox" name="swimmigpool" id="filter-swimmigpool" checked>
@@ -42,7 +42,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend class="home-type">тип жилья:</legend>
+            <legend class="filters-title">тип жилья:</legend>
             <ul>
               <li>
                 <input type="checkbox" name="hotel" id="filter-hotel" checked>
@@ -58,21 +58,23 @@
               </li>
             </ul>
           </fieldset>
-          <h3 class="value">стоимость в сутки (р)</h3>
-          <div class="from">
-            <label for="from">от</label>
-            <input type="number" name="number-from" value="0">
-          </div>
-          <div class="to">
-            <label for="to">до</label>
-            <input type="number" name="number-to" value="3000">
-          </div>
-          <div class="range-selector">
-            <input type="range" name="range-from">
-            <input type="range" name="range-to">
-          </div>
-          <div class="button">
-            <button type="submit" name="button">показать</button>
+          <div class="filters-price">
+            <p class="price">стоимость в сутки (р)</p>
+            <div class="from">
+              <label for="from">от</label>
+              <input type="number" name="number-from" value="0">
+            </div>
+            <div class="to">
+              <label for="to">до</label>
+              <input type="number" name="number-to" value="3000">
+            </div>
+            <div class="range-selector">
+              <input type="range" name="range-from">
+              <input type="range" name="range-to">
+            </div>
+            <div class="button">
+              <button class="button-search" type="submit" name="button">показать</button>
+            </div>
           </div>
         </form>
       </section>
@@ -80,23 +82,21 @@
         <div class="sorting-filters">
           <h2>найдено: <span class="count">3</span></h2>
           <div class="label">сортировка</div>
-          <div class="filters">
-            <div class="sorting active"><a href="#">по цене</a></div>
-            <div class="sorting"><a href="#">по типу</a></div>
-            <div class="sorting"><a href="#">по рейтингу</a></div>
-          </div>
+          <ul class="sorting-list">
+            <li class="sorting-item active"><a href="#">по цене</a></li>
+            <li class="sorting-item"><a href="#">по типу</a></li>
+            <li class="sorting-item"><a href="#">по рейтингу</a></li>
+          </ul>
           <div class="sort-order">
-            <a class="up" href="#"></a>
-            <a class="down active" href="#"></a>
+            <a class="up" href="#">кнопка наверх</a>
+            <a class="down active" href="#">кнопка вниз</a>
           </div>
         </div>
         <ul class="hotel-list">
           <li class="hotel-item">
-            <div class="hotel-img">
-              <a class="hotel-img" href="#">
-                <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara resort&spa">
-              </a>
-            </div>
+            <a class="hotel-img" href="#">
+              <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara resort&spa">
+            </a>
             <a class="hotel-name" href="#">amara resort&spa</a>
             <div class="hotel-description">
               <div>гостиница</div>
@@ -104,19 +104,18 @@
               <a class="button" href="#">подробнее</a>
               <a class="button button-brown" href="#">забронировать</a>
             </div>
-            <div class="rating">
+            <div class="rating-star">
               <span class="star"></span>
               <span class="star"></span>
               <span class="star"></span>
               <span class="star"></span>
             </div>
-            <div>рейтинг: 8,5</div>
+            <div class="rating">рейтинг: 8,5</div>
           </li>
           <li class="hotel-item">
-            <div class="hotel-img">
-              <a class="hotel-img" href="#">
-                <img src="img/desert-quail.jpg" width="135" height="90" alt="Desert quail inn">
-              </a>
+            <a class="hotel-img" href="#">
+              <img src="img/desert-quail.jpg" width="135" height="90" alt="Desert quail inn">
+            </a>
             </div>
             <a class="hotel-name" href="#">desert quail inn</a>
             <div class="hotel-description">
@@ -125,18 +124,17 @@
               <a class="button" href="#">подробнее</a>
               <a class="button button-brown" href="#">забронировать</a>
             </div>
-            <div class="rating">
+            <div class="rating-star">
               <span class="star"></span>
               <span class="star"></span>
               <span class="star"></span>
             </div>
-            <div>рейтинг: 8,9</div>
+            <div class="rating">рейтинг: 8,9</div>
           </li>
           <li class="hotel-item">
-            <div class="hotel-img">
-              <a class="hotel-img" href="#">
-                <img src="img/villas-at-poco.jpg" width="135" height="90" alt="Villas at poco diablo">
-              </a>
+            <a class="hotel-img" href="#">
+              <img src="img/villas-at-poco.jpg" width="135" height="90" alt="Villas at poco diablo">
+            </a>
             </div>
             <a class="hotel-name" href="#">villas at poco diablo</a>
             <div class="hotel-description">
@@ -145,22 +143,21 @@
               <a class="button" href="#">подробнее</a>
               <a class="button button-brown" href="#">забронировать</a>
             </div>
-            <div class="rating">
+            <div class="rating-star">
               <span class="star"></span>
               <span class="star"></span>
-              <div>рейтинг: 9,2</div>
+              <div class="rating">рейтинг: 9,2</div>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="footer-index">
+    <footer class="footer">
       <a class="footer-index-hashtag" href="#">#visitsedona</a>
-      <div class="footer-index-social">
-        <ul class="social-buttons">
-          <li class="social-item"><a class="social-button" href="#">twitter</a></li>
-          <li class="social-item"><a class="social-button" href="#">facebook</a></li>
-          <li class="social-item"><a class="social-button" href="#">youtube</a></li>
-      </div>
+      <ul class="social-buttons">
+        <li class="social-item"><a class="social-button" href="#">twitter</a></li>
+        <li class="social-item"><a class="social-button" href="#">facebook</a></li>
+        <li class="social-item"><a class="social-button" href="#">youtube</a></li>
+      </ul>
       <div class="footer-copyright">
         <span class="web-copyright">website by</span>
         <a class="web-logo" href="#">
@@ -168,7 +165,7 @@
         </a>
       </div>
     </footer>
-    </div>
+  </div>
 </body>
 
 </html>
