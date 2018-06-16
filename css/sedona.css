@@ -1,11 +1,17 @@
 body {
   margin: 0;
   padding: 0;
-  line-height: 21px;
-  text-transform: uppercase;
+
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
-  color: black;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
 }
 
 nav{
@@ -13,9 +19,30 @@ nav{
   font-weight: bold;
 }
 
+.menu a:hover,
+.menu a:focus
+.menu.active {
+  color: #766357;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu a {
+  color: #000000;
+}
+
+
 section.intro {
-  background-image: url(../img/background-photo.jpg);
-  height: 773px;
+  background-image: url(../img/vinette.png), url(../img/background-photo.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center top;
+  height: 510px;
+}
+
+.tagline, .compare {
+  text-align: center;
 }
 
 .wrapper {
@@ -60,6 +87,10 @@ section.intro {
   background-color: #eeeeee;
   width: 314px;
   height: 166px;
+}
+
+.search {
+  text-align: center;
 }
 
 .search-intro {
@@ -110,23 +141,28 @@ input {
   height: 748px;
 }
 
+
+.social-buttons {
+  list-style: none;
+  text-align: center;
+}
+
+.copyright {
+  text-align: right;
+}
+
 .footer-hashtag {
   line-height: 26px;
+  color: #000000;
   font-size: 21px;
   font-weight: bold;
 }
 
-.social-icon {
-  background-color: #81b3d2;
-  width: 46px;
-  height: 48px;
-}
-
-.web-copyright {
-  line-height: 26px;
-}
-
 /* ------------ */
+
+li.active {
+  color: #766357;
+}
 
 .filters {
   background-image: url(../img/filter-background.jpg);
@@ -156,6 +192,8 @@ input {
 }
 
 .button.filters-button {
+  background: transparent;
+  border-color: white;
   line-height: 21px;
   color: white;
 }
@@ -173,6 +211,7 @@ input {
 
 .sorting-item:not(.active){
   border-bottom: 1px dashed #81b3d2;
+  color: #000000;
 }
 
 .sorting-item.active {
@@ -181,6 +220,7 @@ input {
 
 
 .hotel-name {
+  color: #000000;
   line-height: 26px;
   font-size: 21px;
   font-weight: bold;
@@ -188,6 +228,7 @@ input {
 
 
 a.button {
+  color: #ffffff;
   background-color: #81b3d2;
   font-weight: bold;
 }
