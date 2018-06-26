@@ -38,9 +38,7 @@
             <div class="feature-number">№1</div>
             <p class="feature-adcice">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <div class="feature-image">
-            <img src="img/real-city.jpg" width="800" height="401" alt="Sedona city">
-          </div>
+          <div class="feature-image sedona"></div>
         </div>
         <div class="features-row">
           <div class="feature feature-icon feature-accomodation">
@@ -57,9 +55,7 @@
           </div>
         </div>
         <div class="features-row">
-          <div class="feature-image">
-            <img src="img/devils-bridge.jpg" width="800" height="400" alt="Devil's bridge">
-          </div>
+          <div class="feature-image devils"></div>
           <div class="feature feature-blue">
             <h3 class="feature-title">Там есть мост дьявола</h3>
             <div class="feature-number">№2</div>
@@ -86,32 +82,33 @@
       </section>
       <section class="search">
         <h2 class="search-intro">Заинтересовались?</h2>
-        <p class="search-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения месяца в седоне</p>
+        <p class="search-info">
+          Укажите предполагаемые даты поездки,
+          <br>
+          и мы покажем вам лучшие предложения месяца в седоне
+        </p>
         <button class="button button-search" type="button">Поиск гостиницы в Седоне</button>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="search-form row">
-              <label for="check-in-field">Дата заезда</label>
-              <input class="field-check" id="check-in-field" type="text" name="check-in" value="24 апреля 2017">
-              <button class="calendar" type="button">
-                <img class="form-calendar" src="img/calendar.svg" alt="Календарь">
-              </button>
-            </div>
-            <div class="search-form row">
-              <label for="check-out-field">Дата выезда</label>
-              <input class="field-check" id="check-out-field" type="text" name="check-out" value="4 июля 2017">
-              <button class="calendar" type="button">
-                <img class="form-calendar" src="img/calendar.svg" alt="Календарь">
-              </button>
-            </div>
+          <div class="row">
+            <label for="check-in-field">Дата заезда</label>
+            <input class="field-check" id="check-in-field" type="text" name="check-in" value="24 апреля 2017">
+            <button class="calendar" type="button">
+              <img class="form-calendar" src="img/calendar.svg" alt="Календарь">
+            </button>
           </div>
-          <div class="search-form row">
+          <div class="row">
+            <label for="check-out-field">Дата выезда</label>
+            <input class="field-check" id="check-out-field" type="text" name="check-out" value="4 июля 2017">
+            <button class="calendar" type="button">
+              <img class="form-calendar" src="img/calendar.svg" alt="Календарь">
+            </button>
+          </div>
+          <div class="row">
             <label for="adults">Взрослые</label>
             <button class="sign" type="button">-</button>
             <input class="field-number" type="text" name="adults" value="2">
             <button class="sign" type="button">+</button>
-          </div>
-          <div class="search-form row">
-            <label for="children">Дети</label>
+            <label class="children" for="children">Дети</label>
             <button class="sign" type="button">-</button>
             <input class="field-number" type="text" name="children" value="0">
             <button class="sign" type="button">+</button>
@@ -126,19 +123,19 @@
     </main>
     <footer class="footer footer-index">
       <a class="footer-hashtag" href="#">#visitsedona</a>
-    <div class="social">
-      <ul class="social-buttons">
-        <li class="social-item">
-          <a class="social-button" href="#">twitter</a>
-        </li>
-        <li class="social-item">
-          <a class="social-button" href="#">facebook</a>
-        </li>
-        <li class="social-item">
-          <a class="social-button" href="#">youtube</a>
-        </li>
-      </ul>
-    </div>
+      <div class="social">
+        <ul class="social-buttons">
+          <li class="social-item">
+            <a class="social-button" href="#">twitter</a>
+          </li>
+          <li class="social-item">
+            <a class="social-button" href="#">facebook</a>
+          </li>
+          <li class="social-item">
+            <a class="social-button" href="#">youtube</a>
+          </li>
+        </ul>
+      </div>
       <div class="copyright">
         <span class="footer-copyright">website by</span>
         <a class="footer-logo" href="#"></a>
