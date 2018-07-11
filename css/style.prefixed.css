@@ -536,7 +536,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 120px;
+  padding-top: 34px;
+  padding-bottom: 33px;
 }
 
 .footer-column {

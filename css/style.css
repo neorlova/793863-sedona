@@ -463,7 +463,8 @@ body {
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  min-height: 120px;
+  padding-top: 34px;
+  padding-bottom: 33px;
 }
 
 .footer-column {
